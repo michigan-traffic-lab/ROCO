@@ -9,6 +9,8 @@ The **RO**udanbout traffic **CO**nflict Dataset is a collection of traffic confl
 - The data sample rate is 2.5Hz.
 - MSight roadside perception system is used to extract the vehicle trajectories from raw video frames.
 
+A related dataset: [RBTrajectoryData](https://github.com/michigan-traffic-lab/RBTrajectoryData)
+provides the whole trajectory data in September 2022 at the same roundabout.
 ## Citation
 
 ## Sample Set
@@ -107,7 +109,7 @@ Here is an example of the data in a json file
 ### Licenses
 Unless specifically labeled otherwise, these Datasets are provided to You under a Creative Commons Attribution-Sharealike 4.0 International Public License (“CC BY-SA 4.0”) The CC BY-SA 4.0 may be accessed at https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode. When You download or use the Datasets from the Website or elsewhere, You are agreeing to comply with the terms of CC BY-SA 4.0 and also agreeing to the Dataset Terms. Where these Dataset Terms conflict with the terms of CC BY-SA 4.0, these Dataset Terms shall prevail.
 
-### Acknowledgement
+## Acknowledgement
 The dataset is supported by [Mcity](https://mcity.umich.edu/) and [National Science Foundation](https://www.nsf.gov/).
 
 ## Developers
