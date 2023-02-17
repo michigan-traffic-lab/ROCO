@@ -12,6 +12,35 @@ The **RO**udanbout traffic **CO**nflict Dataset is a collection of traffic confl
 A related dataset: [RBTrajectoryData](https://github.com/michigan-traffic-lab/RBTrajectoryData)
 provides the whole trajectory data in September 2022 at the same roundabout.
 ## Citation
+> [Design, Implementation, and Evaluation of a Roadside Cooperative Perception System](https://drive.google.com/file/d/1lNYbGUzCMqt1zLPuyrfwM0NuiCS9hfpf/view)<br />
+> Rusheng Zhang, Zhengxia Zou, Shengyin Shen, and Henry X. Liu<br />
+> *Transportation Research Record, 2022*
+> ```
+> @article{zhang2022design,
+>     author = {Rusheng Zhang and Zhengxia Zou and Shengyin Shen and Henry X. Liu},
+>     title ={Design, Implementation, and Evaluation of a Roadside Cooperative Perception System},
+>     journal = {Transportation Research Record},
+>     volume = {2676},
+>     number = {11},
+>     pages = {273-284},
+>     year = {2022},
+>     doi = {10.1177/03611981221092402},
+> }
+> ```
+
+> [Real-time full-stack traffic scene perception for autonomous driving with roadside cameras](https://drive.google.com/file/d/1PNY7u606XHUJIs7t1GYU59yzGXQ5PBi_/view?usp=sharing)<br />
+> Zhengxia Zou, Rusheng Zhang, Shengyin Shen, Gaurav Pandey, Punarjay Chakravarty, Armin Parchami, and Henry X. Liu<br />
+> *International Conference on Robotics and Automation, 2022*
+> ```
+> @inproceedings{zou2022real,
+>   title={Real-time full-stack traffic scene perception for autonomous driving with roadside cameras},
+>   author={Zou, Zhengxia and Zhang, Rusheng and Shen, Shengyin and Pandey, Gaurav and Chakravarty, Punarjay and Parchami, Armin and Liu, Henry X},
+>   booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+>   pages={890--896},
+>   year={2022},
+>   organization={IEEE}
+> }
+> ```
 
 ## Sample Set
 For this release, we are providing a sample set of 80 traffic conflict events.
@@ -55,8 +84,9 @@ or for some conflicts that are hard to identify the conflict vehicles, denote â€
     - 1 - one or two vehicles are forced to slow down in the circle due to the conflict
     - 2 - one or two vehicles are forced to stop in the circle due to the conflict
     - 3 - three or more vehicles are forced to slow down or stop in the circle due to the conflict
-- The time offset (second) of the conflict event from the first frame (also the conflict name).
-E.g., for a conflict named 
+- The time offset (second) of the conflict event from the first frame timestamp (also the conflict name).
+E.g., if the first frame timestamp is 2022-09-01 10-00-34-761973, and the time offset of the conflict is 3 seconds, 
+then the conflict event timestamp is 2022-09-01 10-00-37-761973.
 
 In the CSV file, the columns are:
 ```
