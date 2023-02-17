@@ -103,7 +103,7 @@ Here is an example of the data in a json file
 ```
 
 ## Download
-[roco_sample.zip]()
+[roco_sample.zip](https://github.com/michigan-traffic-lab/ROCO/releases/download/v0.1/roco_sample.zip)
 
 ## Terms of Use
 ### Licenses
