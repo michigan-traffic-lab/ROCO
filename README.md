@@ -12,33 +12,15 @@ The **RO**udanbout traffic **CO**nflict Dataset is a collection of traffic confl
 A related dataset: [RBTrajectoryData](https://github.com/michigan-traffic-lab/RBTrajectoryData)
 provides the whole trajectory data in September 2022 at the same roundabout.
 ## Citation
-> [Design, Implementation, and Evaluation of a Roadside Cooperative Perception System](https://drive.google.com/file/d/1lNYbGUzCMqt1zLPuyrfwM0NuiCS9hfpf/view)<br />
-> Rusheng Zhang, Zhengxia Zou, Shengyin Shen, and Henry X. Liu<br />
-> *Transportation Research Record, 2022*
+> [ROCO: A Roundabout Traffic Conflict Dataset](https://arxiv.org/abs/2303.00563)<br />
+> Depu Meng, Owen Sayer, Rusheng Zhang, Shengyin Shen, Houqiang Li, and Henry X. Liu<br />
+> *Transportation Research Board Annual Meeting, 2023*
 > ```
 > @article{zhang2022design,
->     author = {Rusheng Zhang and Zhengxia Zou and Shengyin Shen and Henry X. Liu},
->     title ={Design, Implementation, and Evaluation of a Roadside Cooperative Perception System},
->     journal = {Transportation Research Record},
->     volume = {2676},
->     number = {11},
->     pages = {273-284},
->     year = {2022},
->     doi = {10.1177/03611981221092402},
-> }
-> ```
-
-> [Real-time full-stack traffic scene perception for autonomous driving with roadside cameras](https://drive.google.com/file/d/1PNY7u606XHUJIs7t1GYU59yzGXQ5PBi_/view?usp=sharing)<br />
-> Zhengxia Zou, Rusheng Zhang, Shengyin Shen, Gaurav Pandey, Punarjay Chakravarty, Armin Parchami, and Henry X. Liu<br />
-> *International Conference on Robotics and Automation, 2022*
-> ```
-> @inproceedings{zou2022real,
->   title={Real-time full-stack traffic scene perception for autonomous driving with roadside cameras},
->   author={Zou, Zhengxia and Zhang, Rusheng and Shen, Shengyin and Pandey, Gaurav and Chakravarty, Punarjay and Parchami, Armin and Liu, Henry X},
->   booktitle={2022 International Conference on Robotics and Automation (ICRA)},
->   pages={890--896},
->   year={2022},
->   organization={IEEE}
+>     author = {Meng, Depu and Sayer, Owen and Zhang, Rusheng and Shen, Shengyin and Li, Houqiang and Liu, Henry X.},
+>     title ={ROCO: A Roundabout Traffic Conflict Dataset},
+>     journal = {Transportation Research Board Annual Meeting},
+>     year = {2023},
 > }
 > ```
 
