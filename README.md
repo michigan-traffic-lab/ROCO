@@ -5,12 +5,12 @@ The **RO**udanbout traffic **CO**nflict Dataset is a collection of traffic confl
  The dataset provides the trajectories of the conflicts, 
  along with information about the reason, time, and effect of conflict.
 
-- The data was collected from 9am to 7pm in the first week in September 2022.
+- The data was collected from 9am to 6pm in July 2023.
 - The data sample rate is 2.5Hz.
 - MSight roadside perception system is used to extract the vehicle trajectories from raw video frames.
 
 A related dataset: [RBTrajectoryData](https://github.com/michigan-traffic-lab/RBTrajectoryData)
-provides the whole trajectory data in September 2022 at the same roundabout.
+provides more trajectory data in July 2023 at the same roundabout.
 ## Citation
 > [ROCO: A Roundabout Traffic Conflict Dataset](https://arxiv.org/abs/2303.00563)<br />
 > Depu Meng, Owen Sayer, Rusheng Zhang, Shengyin Shen, Houqiang Li, and Henry X. Liu<br />
@@ -25,7 +25,7 @@ provides the whole trajectory data in September 2022 at the same roundabout.
 > ```
 
 ## Sample Set
-For this release, we are providing a sample set of 80 traffic conflict events.
+For this release, we are providing a sample set of traffic conflict events from one week.
 These events were selected to provide a representative sample of the full dataset.
 Each event is stored as a separate folder in the dataset.
 
@@ -57,10 +57,6 @@ In the label CSV file, it contains the following fields:
     - 3 - improper lane use
     - 4 - secondary conflicts. The conflict is caused by previous events, like a previous conflict or previous crash
     - 5 - others
-- IDs of the conflict vehicle pair, e.g. (23, 10). Notice: for secondary conflicts 
-or for some conflicts that are hard to identify the conflict vehicles, denote ‘-1’.
- For the videos that have multiple conflicts,
- we only consider the pair of vehicles of the first (primary) conflict.
 - The effect of the conflict on the traffic flow:
     - 0 - the traffic flow is not affected
     - 1 - one or two vehicles are forced to slow down in the circle due to the conflict
@@ -89,33 +85,11 @@ Here is an example of the data in a json file
     "category": 0.0,      # the category of the vehicle (0: cars, 1: truck/bus/trailer)
     "speed": 1.536,      # the speed of the vehicle (m/s)
     "speed_heading": -1.741,      # the heading of the vehicle (north: 0, clock-wise)
-    "predicted_future":     # predicted future vehicle position at the next six frames by our trajectory prediction model
-      {
-        "mean":     # the mean of the predicted future vehicle position
-          [
-            [42.22948273444069, -83.73878684072021], 
-            [42.22951917166349, -83.73882189902272], 
-            [42.22955463092418, -83.73885653671525], 
-            [42.22959806281623, -83.73889505995245], 
-            [42.229641211286584, -83.73891961750685], 
-            [42.229683881407645, -83.73894786679861]
-          ], 
-        "std":     # the variance of the predicted future vehicle position
-          [
-            [0.0, 0.0], 
-            [3.3877596180390264e-06, 5.4456512171775565e-06], 
-            [3.7547065911662862e-06, 5.874294391702309e-06], 
-            [4.419491663688003e-06, 6.963602536202044e-06], 
-            [5.08341492670003e-06, 8.755623608381619e-06], 
-            [6.052037926312747e-06, 1.0661085971328865e-05]
-          ]
-      }
   },
 ]
 ```
 
 ## Download
-[roco_sample.zip](https://github.com/michigan-traffic-lab/ROCO/releases/download/v0.1/roco_sample.zip)
 
 ## Terms of Use
 ### Licenses
