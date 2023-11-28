@@ -36,11 +36,11 @@ The dataset is formatted into a zip file. The structure of the dataset is:
 root/
     |- label.csv    # the label file of the dataset
     └- data/    # the raw trajectory data
-        |- 2022-09-01_10-46-36-002396     # the trajectory data for one conflict event
-        |   |- 2022-09-01 10-00-34-761973.json     # the trajectory file of one frame
-        |   |- 2022-09-01 10-00-35-174299.json     # the trajectory file of one frame
+        |- 2023-07-10_18-31-30     # the trajectory data for one conflict event
+        |   |- 2023-07-10 18-31-30-110186.json     # the trajectory file of one frame
+        |   |- 2023-07-10 18-31-30-520815.json     # the trajectory file of one frame
         |   ...
-        |- 2022-09-01_12-00-13-711073
+        |- 2023-07-11_13-43-54
         ...
 ```
 
@@ -51,20 +51,15 @@ In the label CSV file, it contains the following fields:
     - level 2 - a traffic accident
 - Reason: A label that describes the reason for the traffic conflict.
     - 0 - entering a roundabout without yielding to the circulating vehicles
-    - 0* - truck/bus/trailer entering a roundabout without yielding to the circulating vehicles
     - 1 - unnecessary stop in the circle
-    - 2 - the truck/bus is too big and interferes with the traffic flow
-    - 3 - improper lane use
-    - 4 - secondary conflicts. The conflict is caused by previous events, like a previous conflict or previous crash
-    - 5 - others
+    - 2 - improper lane use
+    - 3 - secondary conflicts. The conflict is caused by previous events, like a previous conflict or previous crash
+    - 4 - others
 - The effect of the conflict on the traffic flow:
     - 0 - the traffic flow is not affected
     - 1 - one or two vehicles are forced to slow down in the circle due to the conflict
     - 2 - one or two vehicles are forced to stop in the circle due to the conflict
     - 3 - three or more vehicles are forced to slow down or stop in the circle due to the conflict
-- The time offset (second) of the conflict event from the first frame timestamp (also the conflict name).
-E.g., if the first frame timestamp is 2022-09-01 10-00-34-761973, and the time offset of the conflict is 3 seconds, 
-then the conflict event timestamp is 2022-09-01 10-00-37-761973.
 
 In the CSV file, the columns are:
 ```
@@ -99,7 +94,13 @@ Unless specifically labeled otherwise, these Datasets are provided to You under 
 The dataset is supported by [Mcity](https://mcity.umich.edu/) and [National Science Foundation](https://www.nsf.gov/).
 
 ## Developers
-Depu Meng - depum@umich.edu, Rusheng Zhang - rushengz@umich.edu, Shengyin Shen - shengyin@umich.edu
+Depu Meng (depum@umich.edu)
+
+Rusheng Zhang (rushengz@umich.edu)
+
+Boqi Li (boqili@umich.edu)
 
 ## Contact
-Henry Liu - henryliu@umich.edu
+Henry Liu (henryliu@umich.edu)
+
+Sean Shen (shengyin@umich.edu)
