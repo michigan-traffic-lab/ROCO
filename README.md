@@ -9,7 +9,7 @@ The **RO**udanbout traffic **CO**nflict Dataset is a collection of traffic confl
 - The data sample rate is 2.5Hz.
 - MSight roadside perception system is used to extract the vehicle trajectories from raw video frames.
 
-A related dataset: [RBTrajectoryData](https://github.com/michigan-traffic-lab/RBTrajectoryData)
+A related dataset: [Ann-Arbor-Intersection-Trajectory-Data](https://github.com/michigan-traffic-lab/Ann-Arbor-Intersection-Trajectory-Data)
 provides more trajectory data in July 2023 at the same roundabout.
 ## Citation
 > [ROCO: A Roundabout Traffic Conflict Dataset](https://arxiv.org/abs/2303.00563)<br />
@@ -33,9 +33,9 @@ Each event is stored as a separate folder in the dataset.
 ### Data directory structure
 The dataset is formatted into a zip file. The structure of the dataset is:
 ```
-root/
-    |- label.csv    # the label file of the dataset
-    └- data/    # the raw trajectory data
+roco/
+    |- conflict_label.csv    # the label file of the dataset
+    └- conflict_trajectories/    # the raw trajectory data
         |- 2023-07-10_18-31-30     # the trajectory data for one conflict event
         |   |- 2023-07-10 18-31-30-110186.json     # the trajectory file of one frame
         |   |- 2023-07-10 18-31-30-520815.json     # the trajectory file of one frame
@@ -51,15 +51,14 @@ In the label CSV file, it contains the following fields:
     - level 2 - a traffic accident
 - Reason: A label that describes the reason for the traffic conflict.
     - 0 - entering a roundabout without yielding to the circulating vehicles
-    - 1 - unnecessary stop in the circle
+    - 1 - unnecessary deceleration in the circle
     - 2 - improper lane use
     - 3 - secondary conflicts. The conflict is caused by previous events, like a previous conflict or previous crash
     - 4 - others
 - The effect of the conflict on the traffic flow:
     - 0 - the traffic flow is not affected
     - 1 - one or two vehicles are forced to slow down in the circle due to the conflict
-    - 2 - one or two vehicles are forced to stop in the circle due to the conflict
-    - 3 - three or more vehicles are forced to slow down or stop in the circle due to the conflict
+    - 2 - three or more vehicles are forced to slow down or stop in the circle due to the conflict
 
 In the CSV file, the columns are:
 ```
@@ -85,6 +84,7 @@ Here is an example of the data in a json file
 ```
 
 ## Download
+[sample_data](https://sip-aa-data.s3.us-east-2.amazonaws.com/ROCO.zip)
 
 ## Terms of Use
 ### Licenses
