@@ -84,7 +84,7 @@ Here is an example of the data in a json file
 ```
 
 ## Download
-[sample_data](https://sip-aa-data.s3.us-east-2.amazonaws.com/ROCOv2.zip)
+[sample_data](https://sip-aa-data.s3.us-east-2.amazonaws.com/ROCO.zip)
 
 ## Terms of Use
 ### Licenses
